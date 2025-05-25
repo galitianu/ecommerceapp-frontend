@@ -1,0 +1,28 @@
+{
+  "companyName": "Haine faine",
+  "address": "123 Example St, Example City, EC 12345",
+  "contact": {
+    "email": "andrei@galitianu.com",
+    "phone": "112"
+  },
+  "images": {
+    "logo": "https://files.oprisor.dev/api/public/dl/hMwLUONc?inline=true",
+    "description": {
+      "mobile": "https://files.oprisor.dev/api/public/dl/Fjx43FsQ?inline=true",
+      "tablet": "https://files.oprisor.dev/api/public/dl/uiXB-jvU?inline=true",
+      "desktop": "https://files.oprisor.dev/api/public/dl/xQPnbYdm?inline=true"
+    },
+    "auth": "https://files.oprisor.dev/api/public/dl/wFcaoRdN?inline=true"
+  },
+  "metadataTitle": "Haine faine",
+  "socialMedia": {
+    "facebook": "https://facebook.com/transylvania100",
+    "instagram": "https://instagram.com/ig_transylvania"
+  },
+  "heroHeading": "CHEF'S SPECIAL",
+  "heroText": "Steak So Good, Even Dracula Can't Resist! Dive into our Garlic-Infused Steak - where legendary flavors defy myths.",
+  "descriptionHeading": "Bringing you the best offerings.",
+  "description": "Haine faine",
+  "copyright": "Copyright 2024. All Rights Reserved",
+  "footerText": "Haine faine"
+}

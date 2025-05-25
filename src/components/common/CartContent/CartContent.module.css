@@ -1,0 +1,172 @@
+.cartContent {
+  border-radius: 0.5rem;
+
+  background-color: var(--purewhite);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cartCounterAndRemoveAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.cartCounterAndRemoveAll p {
+  color: var(--jetblack);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08038rem;
+  text-transform: uppercase;
+}
+
+.cartCounterAndRemoveAll button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  opacity: 0.5;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cartTotal p {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--jetblack);
+}
+
+.paragraph {
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  opacity: 0.5;
+}
+
+.cartCounterAndRemoveAll button:hover {
+  opacity: 1;
+  color: var(--rustorange);
+}
+
+.ldsheart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.ldsheart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: var(--rustorange);
+  animation: ldsheart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.ldsheart div:after,
+.ldsheart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: var(--rustorange);
+}
+.ldsheart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.ldsheart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes ldsheart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 768px) {
+  .cartContent {
+    max-width: 23.5rem;
+    margin-left: auto;
+  }
+
+  .button {
+    width: 19.5625rem;
+    height: 3rem;
+  }
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+.buttonDiv a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.buttonDiv a button {
+  width: 100%;
+}
+
+.closeButton {
+  margin-left: 95%;
+  margin-bottom: 1rem;
+  margin-right: 2rem; 
+  background: none; 
+  border: none;
+  color: var(--jetblack);
+  font-size: 1.5rem; 
+  cursor: pointer; 
+  opacity: 0.5; 
+  transition: opacity 0.3s ease;
+}
+
+.closeButton:hover {
+  opacity: 1;
+  color: var(--rustorange)
+}
+
+.closeButton:focus {
+  outline: none; 
+}

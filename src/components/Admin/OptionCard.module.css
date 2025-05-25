@@ -1,0 +1,29 @@
+
+.card {
+    background-color: var(--lightgray);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 18rem;
+    color: var(--charcoal);
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+.iconContainer {
+    background-color: var(--rustorange);
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  
+.content {
+    padding-inline: 16px;
+    padding-bottom: 16px;
+  }
+
+.description {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

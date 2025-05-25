@@ -1,0 +1,35 @@
+.background {
+  background-color: var(--lightgray);
+}
+
+.checkoutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: var(--purewhite);
+}
+
+@media screen and (min-width: 768px) {
+  .checkoutCard {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .checkoutCard {
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .checkoutCard {
+    margin-left: 11.5rem;
+    margin-right: 11.5rem;
+  }
+}

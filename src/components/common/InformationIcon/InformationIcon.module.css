@@ -1,0 +1,32 @@
+.informationIconContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon {
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .informationIconContainer:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

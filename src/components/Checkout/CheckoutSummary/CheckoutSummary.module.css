@@ -1,0 +1,28 @@
+.checkoutPriceSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.checkoutPriceSection:last-child {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  color: var(--jetblack);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  opacity: 0.5;
+}
+
+.price {
+  color: var(--jetblack);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .linksContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .linksContainer {
+    margin-top: 0rem;
+  }
+}

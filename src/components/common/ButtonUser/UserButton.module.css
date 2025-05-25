@@ -1,0 +1,15 @@
+.linkWrapper {
+  display: flex;
+  text-decoration: none;
+}
+
+.linkWrapper p {
+  color: var(--purewhite);
+  padding-right: 0.5rem;
+}
+
+.linkWrapper:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--purewhite);
+}

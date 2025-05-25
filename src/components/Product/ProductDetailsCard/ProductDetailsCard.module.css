@@ -1,0 +1,232 @@
+.productDetailsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.productCardFeaturesWrapper {
+  padding-top: 5.5rem;
+}
+
+.productCardBoxWrapper {
+  padding-top: 5.5rem;
+}
+
+.productCardFeaturesAndBoxWrapper {
+  margin-bottom: 5.5rem;
+}
+
+.productDetailsCard h3 {
+  padding-bottom: 1.5rem;
+
+  color: var(--jetblack);
+  text-align: left;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0.05356rem;
+  text-transform: uppercase;
+}
+
+.productDetailsCard p {
+  opacity: 0.5;
+
+  text-align: left;
+  color: var(--jetblack);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+}
+
+.productDetailsCard li {
+  color: var(--jetblackOpaque);
+  list-style-type: none;
+  text-align: left;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productDetailsCard li span {
+  color: var(--rustorange);
+  margin-right: 1rem;
+}
+
+.productDetailsCardImagesWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  min-height: 40rem;
+  min-width: 10rem;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.productDetailsCardImage {
+  flex: 1;
+  width: 100%;
+  min-width: 17.75rem;
+  min-height: 10rem;
+  position: relative;
+}
+
+.productDetailsCardImage:last-child {
+  flex: 2;
+}
+
+.productDetailsCardImage img {
+  border-radius: 0.5rem;
+}
+
+.relatedProductText {
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--jetblack);
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0.07144rem;
+  text-transform: uppercase;
+}
+
+.productsRelated {
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+  margin-bottom: 7rem;
+
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .relatedProductText {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productDetailsCard p {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .productDetailsCard h3 {
+    padding-bottom: 2rem;
+
+    font-size: 2rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.07144rem;
+  }
+
+  .productCardFeaturesAndBoxWrapper {
+    margin-bottom: 7.5rem;
+  }
+
+  .productCardFeaturesWrapper {
+    padding-top: 7.5rem;
+  }
+
+  .productCardBoxWrapper {
+    padding-top: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .productCardBoxWrapper ul {
+    flex: 1;
+  }
+
+  .productCardBoxWrapper h3 {
+    flex: 1;
+  }
+
+  .productDetailsCardImagesWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split the container into two columns */
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .productDetailsCardImagesWrapper {
+    min-width: 20rem;
+  }
+
+  .productDetailsCardImage {
+    min-height: 10rem;
+  }
+
+  .productDetailsCardImage:last-child {
+    min-height: 20rem;
+  }
+
+  .productDetailsCardImage:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .productDetailsCardImage:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2; /* Placed in the third row to leave the second row for the larger image */
+  }
+
+  .productDetailsCardImage:last-child {
+    grid-column: 2;
+    grid-row: span 2; /* This makes the last image span all 3 rows */
+  }
+
+  .productsRelated {
+    flex-direction: row;
+    gap: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .productCardFeaturesAndBoxWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .productCardFeaturesAndBoxWrapper {
+    margin-bottom: 10rem;
+    width: 100%
+  }
+
+  .productCardFeaturesWrapper {
+    padding-top: 10rem;
+    flex: 1;
+    margin-right: 7rem;
+  }
+
+  .productCardBoxWrapper {
+    padding-top: 10rem;
+
+    flex-direction: column;
+    flex: 0.5;
+  }
+
+  .productCardBoxWrapper ul {
+    flex: none;
+  }
+
+  .productCardBoxWrapper h3 {
+    flex: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .productsRelated {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}

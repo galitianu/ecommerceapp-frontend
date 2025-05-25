@@ -1,0 +1,120 @@
+.checkoutFormWrapper {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.checkoutBanner {
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: var(--purewhite);
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.checkoutBanner:last-child {
+  padding-bottom: 2rem;
+
+  margin-bottom: 6rem;
+}
+
+.checkoutBanner h1 {
+  color: var(--jetblack);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
+.notLoggedCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--purewhite);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.notLoggedCard h1 {
+  padding-bottom: 2rem;
+  line-height: 1.5;
+  color: var(--jetblack);
+}
+
+.checkoutCategoryText {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.checkoutCategory h3 {
+  color: var(--rustorange);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  letter-spacing: 0.05806rem;
+  text-transform: uppercase;
+}
+
+/* Summary div */
+
+.checkoutBanner h2 {
+  color: var(--jetblack);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08038rem;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .checkoutCategoryContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .checkoutFormWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .checkoutBanner {
+    height: min-content;
+  }
+
+  .checkoutBanner:first-child {
+    flex: 2;
+  }
+
+  .checkoutBanner:last-child {
+    margin-left: 2rem;
+    flex: 1;
+  }
+}
+
+.stripePayment {
+  padding-bottom: 2rem;
+}

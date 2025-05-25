@@ -1,0 +1,74 @@
+.quantitySelectorCard {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.quantityContainer {
+  background-color: var(--lightgray);
+  display: flex;
+  flex-direction: row;
+  width: 7.5rem;
+  height: 3rem;
+}
+
+.quantityButton {
+  flex: 1;
+  border: none;
+  opacity: 0.25;
+  background-color: transparent;
+
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+.quantityButton:hover {
+  color: var(--rustorange);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.quantityText {
+  flex: 1;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  color: var(--jetblack);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+
+.addToCartButton {
+  color: var(--purewhite);
+  background-color: var(--rustorange);
+  width: 10rem;
+  height: 3rem;
+  border: none;
+
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+.addToCartButton:hover {
+  background-color: var(--apricotcream);
+}
+
+@media screen and (max-width: 340px) {
+  .addToCartButton {
+    width: 8rem;
+  }
+}

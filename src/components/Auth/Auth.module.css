@@ -1,0 +1,124 @@
+.authCardWrapper {
+  margin-top: 5rem;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.authCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authCard h1 {
+  color: var(--jetblack);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.authCard h2 {
+  color: var(--jetblack);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.authCard a {
+  text-decoration: underline;
+  color: var(--jetblack);
+  opacity: 0.5;
+  text-align: left;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-left: auto;
+}
+
+.authCard a:hover {
+  color: var(--rustorange);
+  opacity: 1;
+}
+
+.authCardPicture {
+  display: none;
+}
+
+.formButton {
+  width: 100%;
+}
+
+.formButton button {
+  width: 100%;
+}
+
+@media screen and (min-width: 650px) {
+  .authCardWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    gap: 1rem;
+    border-radius: 20px;
+    border: 2px solid var(--rustorange);
+    max-height: 35rem;
+    background-color: var(--lightgray);
+  }
+
+  .authCard h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+  }
+
+  .authCard {
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+    padding-right: 1rem;
+  }
+
+  .authCardPicture {
+    flex: 1;
+    display: block;
+    position: relative;
+  }
+
+  .authCardPicture img {
+    border-radius: 18px;
+  }
+
+  .inputFormWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .authCard h2 {
+    text-align: start;
+  }
+
+  .authCardWrapper {
+    max-height: 40rem;
+    margin-inline: 7rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .authCardWrapper {
+    max-height: 50rem;
+    margin-inline: 11rem;
+  }
+}

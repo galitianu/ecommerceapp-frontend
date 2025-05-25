@@ -1,0 +1,140 @@
+.productPreviewCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 20rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.productPreviewCardImage {
+  flex: 1;
+  width: 100%;
+  min-width: 15rem;
+  min-height: 20rem;
+  position: relative;
+
+  border-radius: 0.5rem;
+  background-color: var(--lightgray);
+}
+
+.productPreviewCardText {
+  flex: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.productPreviewCardText h1 {
+  margin-top: 1.5rem;
+
+  text-align: left;
+  color: var(--jetblack);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  width: 70%;
+}
+
+.recentlyAddedLabel {
+  margin-top: 2rem;
+
+  color: var(--rustorange);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.625rem;
+  text-transform: uppercase;
+}
+
+.productPreviewCardText p {
+  margin-top: 1.5rem;
+  margin-left: 0;
+
+  text-align: left;
+  color: var(--jetblack);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  opacity: 0.5;
+  width: 95%;
+}
+
+.productCardPrice {
+  padding-top: 1.5rem;
+  color: var(--jetblack);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.08038rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .productPreviewCard {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .productPreviewCardImage {
+    flex-basis: 25%;
+    min-height: auto;
+  }
+
+  .productPreviewCardText {
+    flex-basis: 50%;
+    padding-left: 4rem;
+  }
+
+  .recentlyAddedLabel {
+    font-size: 0.75rem;
+    letter-spacing: 0.53569rem;
+  }
+
+  .productPreviewCardText h1 {
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .productPreviewCardImage {
+    flex-basis: 50%;
+  }
+
+  .productPreviewCardText {
+    flex-basis: 50%;
+    padding-left: 4rem;
+  }
+
+  .productPreviewCardText h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .recentlyAddedLabel {
+    font-size: 0.875rem;
+    letter-spacing: 0.625rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .productPreviewCardText {
+    padding-left: 8rem;
+  }
+  .productPreviewCardText h1 {
+    font-size: 2.5rem;
+  }
+}

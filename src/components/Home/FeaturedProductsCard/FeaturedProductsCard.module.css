@@ -1,0 +1,122 @@
+.featuredProductCard {
+  height: 25rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featuredProductImage {
+  flex: 1;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: var(--charcoal);
+}
+
+.featuredProductText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center; 
+  background-color: var(--lightgray);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.featuredProductCard:nth-child(odd) .featuredProductText {
+  order: -1;
+}
+
+.featuredProductText h4 {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+
+  color: var(--jetblack);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .featuredProductText {
+    align-items: start;
+  }
+  
+  .featuredProductText h4 {
+    margin-left: 0;
+  }
+  
+  .featuredProductCard {
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .featuredProductText {
+    flex: 1;
+
+    justify-content: center;
+    padding-left: 2.5rem;
+  }
+
+  .featuredProductCard:nth-child(odd) .featuredProductText {
+    margin-right: 1rem;
+  }
+
+  .featuredProductCard:nth-child(even) .featuredProductText {
+    margin-left: 1rem;
+  }
+
+  .featuredProductText h4 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .featuredProductCard {
+    width: auto;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+  }
+
+  .featuredProductText {
+    padding-left: 6rem;
+  }
+
+  .featuredProductCard:nth-child(odd) .featuredProductText {
+    margin-right: 2rem;
+  }
+
+  .featuredProductCard:nth-child(even) .featuredProductText {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .featuredProductCard {
+    margin-left: 11.5rem;
+    margin-right: 11.5rem;
+  }
+
+  .featuredProductText h4 {
+    width: 50%;
+  }
+
+  .featuredProductCard:nth-child(odd) .featuredProductText {
+    margin-right: 3rem;
+  }
+
+  .featuredProductCard:nth-child(even) .featuredProductText {
+    margin-left: 3rem;
+  }
+}

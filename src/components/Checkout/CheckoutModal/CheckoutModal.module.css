@@ -1,0 +1,128 @@
+.modal {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  width: 90%;
+  height: 65%;
+  background-color: var(--purewhite);
+  border-radius: 0.5rem;
+  background-color: var(--purewhite);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--lightgray);
+}
+
+.modalContent h1 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: 0.05356rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--jetblack);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.modalContent p {
+  color: var(--jetblack);
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  text-align: left;
+}
+
+.modalOrderItems {
+  background-color: var(--lightgray);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.designline {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  opacity: 0.2;
+}
+
+.numberOfItems {
+  color: var(--jetblack);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01338rem;
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.orderTotal {
+  background-color: var(--jetblack);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.orderTotal h2 {
+  color: var(--purewhite);
+  opacity: 0.5;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  text-align: left;
+}
+
+.orderTotal p {
+  color: var(--purewhite);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.buttonLink {
+  width: 100%;
+}
+
+.buttonLink button {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .modalContent {
+    width: 62%;
+    height: 62%;
+    min-height: 35rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modalContent {
+    width: 55%;
+    height: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modalContent {
+    width: 45%;
+    height: 50%;
+  }
+}

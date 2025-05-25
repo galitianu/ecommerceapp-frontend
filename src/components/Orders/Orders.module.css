@@ -1,0 +1,192 @@
+.ordersContainer {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-items: flex-start;
+}
+
+.ordersContainer h1 {
+  color: var(--jetblack);
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+.ordersContainer h2 {
+  margin-top: 1rem;
+  color: var(--jetblack);
+  opacity: 0.5;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+.ordersWrapper {
+  margin-top: 1rem;
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderBanner {
+  background-color: var(--lightgray);
+  margin-top: 1rem;
+  list-style-type: none;
+  /* background-color: var(--purewhite); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.orderID {
+  color: var(--apricotcream);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  letter-spacing: 0.05806rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.orderBanner p {
+  color: var(--jetblack);
+  font-size: 1.125rem;
+}
+
+.highlighted {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .ordersContainer {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .ordersWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ordersContainer {
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ordersContainer {
+    margin-left: 11.5rem;
+    margin-right: 11.5rem;
+  }
+
+  .ordersWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* OrderID Styles */
+
+.orderedProducts {
+  background-color: var(--lightgray);
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.orderDetails {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--jetblack);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.orderDetails p {
+  color: var(--purewhite);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  letter-spacing: 0.05806rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--purewhite);
+  opacity: 0.5;
+}
+
+.orderBannerWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--lightgray);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pageInfo {
+  margin: 0 1rem;
+}
+
+
+.pageButton {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  background-color: var(--jetblack);
+  color: white;
+  cursor: pointer;
+}
+
+.pageButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ordersList {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .orderBannerWrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .orderBannerWrapper {
+    width: 50%;
+  }
+}

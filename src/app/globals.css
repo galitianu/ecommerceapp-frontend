@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+:root {
+  --purewhite: #fff;
+  --offwhite: #fafafa;
+  --lightgray: #f1f1f1;
+
+  --jetblack: #000;
+  --jetblackOpaque: rgba(0, 0, 0, 0.5);
+  --jetblackMoreOpaque: rgba(0, 0, 0, 0.9);
+  --charcoal: #101010;
+
+  --rustorange: #d87d4a;
+  --apricotcream: #fbaf85;
+
+  --errorred: #cd2c2c;
+  --darkred: #8b0000;
+}
+
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-rendering: optimizeSpeed;
+  text-align: center;
+  color: var(--very-dark-cyan, #00252e);
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select,
+header {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+::selection {
+  background-color: var(--apricotcream);
+}

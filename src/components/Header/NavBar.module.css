@@ -1,0 +1,20 @@
+.line {
+  height: 3px;
+  background-color: var(--purewhite);
+  width: 100%;
+}
+
+.hamburgerButton {
+  width: 30px;
+  font-size: 24px; 
+  background-color: black; 
+  color: white; 
+  border: none; 
+  padding: 10px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.hamburgerButton:focus {
+  outline: none;
+}

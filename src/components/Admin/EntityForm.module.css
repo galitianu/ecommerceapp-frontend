@@ -1,0 +1,70 @@
+.formContainer {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--purewhite);
+  border: 1px solid var(--lightgray);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formField {
+  margin-bottom: 1rem;
+}
+
+.formField input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonGroup button {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.formField textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  resize: vertical; 
+  min-height: 10rem; 
+}
+
+.includeItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.includeInput {
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+.newInclude {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.newInclude input {
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .formContainer {
+    min-width: 40rem
+  }
+}

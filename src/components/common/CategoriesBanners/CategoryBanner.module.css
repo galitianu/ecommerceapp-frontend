@@ -1,0 +1,106 @@
+.categoryBannerLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.categoryBannerButton {
+  background-color: transparent;
+}
+
+.categoryBannerLink:hover .categoryBannerButton {
+  color: var(--rustorange);
+}
+
+.categoryBannerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: var(--lightgray);
+  width: 85%;
+  max-width: 100%;
+  overflow: visible;
+  margin-bottom: 3.5rem;
+}
+
+.categoryBannerImageWrapper {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  margin-top: -3.7rem;
+}
+
+.categoryBannerContainer h2 {
+  color: var(--jetblack);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.06694rem;
+  text-transform: uppercase;
+}
+
+.categoryBannerButton {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  color: var(--jetblack);
+  opacity: 0.5;
+
+  margin-bottom: 1.3rem;
+  margin-top: 1rem;
+
+  cursor: pointer;
+}
+
+.categoryBannerButton img {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .categoryBannerContainer {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .categoryBannerLink {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .categoryBannerContainer h2 {
+    font-size: 1.125rem;
+    letter-spacing: 0.08038rem;
+  }
+
+  .categoryBannerButton {
+    margin-bottom: 1.8rem;
+  }
+
+  .categoryBannerButton img {
+    margin-left: 0.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .categoryBannerImageWrapper {
+    width: 15rem;
+    height: 15rem;
+  }
+}
