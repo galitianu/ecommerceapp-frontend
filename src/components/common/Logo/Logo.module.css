@@ -13,9 +13,7 @@
     color: var(--apricotcream);
 }
 
-.logoImage {
-    border-radius: 50%;
-}
+.logoImage {}
 
 .logo:hover .roGradient {
     background: linear-gradient(to right, #002B7F, #FCD116, #CE1126);
@@ -24,7 +22,7 @@
     color: transparent;
 }
 
-  
+
 @media screen and (min-width: 375px) {
     .logo img {
         margin-right: 2.5rem;

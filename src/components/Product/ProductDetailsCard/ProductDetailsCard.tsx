@@ -23,11 +23,10 @@ const ProductDetailsCard: React.FC<ProductDetailsCardProps> = async ({
             <p key={index}>
               {paragraph}
               <br />
-              <br />
             </p>
           ))}
         </div>
-        <div className={styles.productCardBoxWrapper}>
+        {/* <div className={styles.productCardBoxWrapper}>
           <h3>IN THE BOX</h3>
           <ul>
             {product.includes.map((includedItem) => (
@@ -36,7 +35,7 @@ const ProductDetailsCard: React.FC<ProductDetailsCardProps> = async ({
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className={styles.productDetailsCardImagesWrapper}>
         <div className={styles.productDetailsCardImage}>

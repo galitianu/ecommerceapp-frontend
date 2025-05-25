@@ -11,14 +11,11 @@ function Logo() {
         <Image
           src={companyData.images.logo}
           alt="logo"
-          width={75}
+          width={150}
           height={75}
           quality={100}
           className={styles.logoImage}
         />
-        <p>
-          Papa<span className={styles.roGradient}>RO</span>
-        </p>
       </Link>
     </div>
   );

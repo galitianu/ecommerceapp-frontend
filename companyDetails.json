@@ -3,26 +3,26 @@
   "address": "123 Example St, Example City, EC 12345",
   "contact": {
     "email": "andrei@galitianu.com",
-    "phone": "112"
+    "phone": "+40 123 456 789"
   },
   "images": {
-    "logo": "https://files.oprisor.dev/api/public/dl/hMwLUONc?inline=true",
+    "logo": "https://files.galitianu.com/api/public/dl/VsI_Ue4i?inline=true",
     "description": {
-      "mobile": "https://files.oprisor.dev/api/public/dl/Fjx43FsQ?inline=true",
-      "tablet": "https://files.oprisor.dev/api/public/dl/uiXB-jvU?inline=true",
-      "desktop": "https://files.oprisor.dev/api/public/dl/xQPnbYdm?inline=true"
+      "mobile": "https://files.galitianu.com/api/public/dl/hRKSp98Q?inline=true",
+      "tablet": "https://files.galitianu.com/api/public/dl/hRKSp98Q?inline=true",
+      "desktop": "https://files.galitianu.com/api/public/dl/hRKSp98Q?inline=true"
     },
-    "auth": "https://files.oprisor.dev/api/public/dl/wFcaoRdN?inline=true"
+    "auth": "https://files.galitianu.com/api/public/dl/wjcNexXh?inline=true"
   },
   "metadataTitle": "Haine faine",
   "socialMedia": {
     "facebook": "https://facebook.com/transylvania100",
     "instagram": "https://instagram.com/ig_transylvania"
   },
-  "heroHeading": "CHEF'S SPECIAL",
-  "heroText": "Steak So Good, Even Dracula Can't Resist! Dive into our Garlic-Infused Steak - where legendary flavors defy myths.",
+  "heroHeading": "Vintage Look",
+  "heroText": "A classic essential, this white T-shirt is made from soft, breathable cotton for all-day comfort. Its clean silhouette and relaxed fit make it perfect for layering or wearing on its own — effortlessly stylish, season after season.",
   "descriptionHeading": "Bringing you the best offerings.",
-  "description": "Haine faine",
-  "copyright": "Copyright 2024. All Rights Reserved",
-  "footerText": "Haine faine"
+  "description": "Discover and shop unique secondhand fashion on our curated marketplace. From vintage classics to modern must-haves, we connect style-conscious buyers with sellers looking to give their clothes a second life. Sustainable, affordable, and effortlessly cool.",
+  "copyright": "Copyright 2025. All Rights Reserved",
+  "footerText": "Made for style lovers, built for a better future. Buy, sell, and live fashionably — without the waste."
 }
