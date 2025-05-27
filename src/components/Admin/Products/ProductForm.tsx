@@ -244,67 +244,6 @@ const ProductForm: React.FC<ProductFormProps> = ({
           required
         />
       </div>
-      <div className={styles.formField}>
-        <label>Included Items</label>
-        {product.includes.map((include, index) => (
-          <div key={index} className={styles.includeItem}>
-            <input
-              type="number"
-              name="quantity"
-              value={include.quantity}
-              onChange={(e) => handleIncludeChange(index, e)}
-              placeholder="Quantity"
-              className={styles.includeInput}
-              onWheel={(e) => e.currentTarget.blur()}
-              required
-            />
-            <input
-              type="text"
-              name="item"
-              value={include.item}
-              onChange={(e) => handleIncludeChange(index, e)}
-              placeholder="Item"
-              className={styles.includeInput}
-              required
-            />
-            <Button
-              buttonType={ButtonType.DANGER}
-              text="Remove"
-              onClick={() => removeInclude(index)}
-              type="button"
-            />
-          </div>
-        ))}
-        <div className={styles.newInclude}>
-          <input
-            type="number"
-            name="quantity"
-            value={newInclude.quantity}
-            onChange={(e) =>
-              setNewInclude({ ...newInclude, quantity: e.target.value })
-            }
-            placeholder="Quantity"
-            onWheel={(e) => e.currentTarget.blur()}
-            className={styles.includeInput}
-          />
-          <input
-            type="text"
-            name="item"
-            value={newInclude.item}
-            onChange={(e) =>
-              setNewInclude({ ...newInclude, item: e.target.value })
-            }
-            placeholder="Item"
-            className={styles.includeInput}
-          />
-          <Button
-            buttonType={ButtonType.PRIMARY}
-            text="Add"
-            onClick={addNewInclude}
-            type="button"
-          />
-        </div>
-      </div>
       <div className={styles.buttonGroup}>
         <Button buttonType={ButtonType.PRIMARY} text="Save" />
         {onCancel && (

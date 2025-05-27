@@ -44,15 +44,15 @@ function AdminPanel() {
         text="Go Back"
         onClick={() => router.back()}
       />
-      <h1>Admin Dashboard</h1>
+      <h1>Sellers Dashboard</h1>
       <div className={adminStyles.cards}>
-        <OptionCard
+        {/* <OptionCard
           icon="/assets/shared/desktop/category.svg"
           name="Manage Categories"
           description="Add, update, and disable product categories."
           route="/admin/categories"
           buttonText="Manage"
-        />
+        /> */}
         <OptionCard
           icon="/assets/shared/desktop/product.svg"
           name="Manage Products"

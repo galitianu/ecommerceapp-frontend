@@ -5,6 +5,8 @@ import styles from "./NavBar.module.css";
 import CategoryLinks from "../common/CategoryLinks/CategoryLinks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import useCheckAdmin from "@/hooks/useCheckAdmin";
 
 interface NavBarProps {
   navBarIsOpen: boolean;
@@ -33,11 +35,19 @@ const NavBar: React.FC<NavBarProps> = ({ navBarIsOpen, toggleMenu }) => {
       window.removeEventListener("resize", updateViewPortWidth);
     };
   }, [navBarIsOpen, toggleMenu]);
+  const { isAdmin } = useCheckAdmin();
 
   return (
     <>
       {isDesktop ? (
-        <CategoryLinks />
+        <div className={styles.linksContainer}>
+          <CategoryLinks />
+          {isAdmin && (
+            <Link href="/admin" className={styles.categoryLink}>
+              <p>Sellers Dashboard</p>
+            </Link>
+          )}
+        </div>
       ) : (
         <button onClick={toggleMenu} className={styles.hamburgerButton}>
           <FontAwesomeIcon icon={navBarIsOpen ? faTimes : faBars} />

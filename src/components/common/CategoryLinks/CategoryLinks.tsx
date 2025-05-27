@@ -12,11 +12,7 @@ const CategoryLinks: React.FC = () => {
     ...categories,
   ];
 
-  return (
-    <div className={styles.linksContainer}>
-      <LinksList links={withHome} />
-    </div>
-  );
+  return <LinksList links={withHome} />;
 };
 
 export default CategoryLinks;
